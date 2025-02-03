@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cricket project</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cricket Game</h1>
+    <button onclick="
+    computerchoise();
+
+    let result;
+    if(computer==='ball'){
+        result='we won';
+        score.win++;
+    }else if(computer==='bat'){ 
+        result='tie';
+        score.tie++
+    }else if(computer==='Stumps'){
+        result='computer won';
+        score.lose++;
+    }
+    alert(`you choise bat and computer choise ${computer} result is ${result}`);
+    console.log(score);
+    showresult();
+    ">Bat</button>
+
+    <button onclick="
+    
+    computerchoise();
+    let result2;
+    if(computer==='ball'){
+        result2='tie';
+        score.tie++
+    }else if(computer==='bat'){
+        result2='computer won';
+        score.lose++;
+    }else if(computer==='Stumps'){
+        result2='we won';
+        score.win++;
+    }
+    alert(`you choise Ball and computer choise ${computer} result is ${result2}`);
+    console.log(score);
+    showresult();
+    
+    ">Ball</button>
+
+    <button onclick="
+    computerchoise();
+    let result3; 
+    if(computer==='ball'){
+        result3='computer won';
+        score.lose++;
+    }else if(computer==='bat'){
+        result3='we won';
+        score.win++;
+    }else if(computer==='Stumps'){
+        result3='tie';
+        score.tie++
+    }
+    alert(`you choise Stumps and computer choise ${computer} result is ${result3}`);
+    console.log(score);
+    showresult();
+    
+    
+    ">Stump</button>
+
+    <button onclick="localStorage.clear()">Reset</button>
+
+    <script>
+        let computer;
+        let score ={
+            win :0,
+            tie:0,
+            lose:0,
+                   
+        }
+
+        function showresult(){
+            let store = localStorage.setItem('score',JSON.stringify(score));
+            console.log(store)
+
+        }
+
+        function computerchoise(){
+            let random_num = Math.random() * 3;
+            if(random_num>=0 && random_num <= 1){
+                computer = 'bat'
+        
+           }else if(random_num>=1 && random_num <= 2){
+               computer = 'ball';
+        
+           }else{
+               computer = 'Stumps'; 
+           }
+       }
+
+    </script>
+</body>
+</html>

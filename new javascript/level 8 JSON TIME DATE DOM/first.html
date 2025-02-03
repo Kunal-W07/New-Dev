@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product = {
+            name : "kunal",
+            age : 25,
+            branch : "cs",
+            "marks" : 90,
+        }
+        console.log(product);
+        // JSON is like object but JSON easyly Convert into String that is called JSON
+        // JSON.stringify is inbulit method convet the object into String
+        // let str = JSON.stringify(product);
+        // console.log(typeof str);
+        // console.log(str);
+        // // JSON.parse convert into object
+        // let str2 = JSON.parse(product);
+        // console.log(str2);
+
+        // localStorage is used to store our key and values in browser
+        localStorage.setItem('kunal', 'wagh')
+        localStorage.setItem('19', 'cs')
+        localStorage.setItem('compter', 'eng')
+        
+        console.log(localStorage.setItem('items',JSON.stringify(product)))
+
+        console.log(localStorage.getItem('items'))
+
+        console.log(localStorage.removeItem('19'))
+
+        // localStorage.clear()
+
+    </script>
+</body>
+</html>

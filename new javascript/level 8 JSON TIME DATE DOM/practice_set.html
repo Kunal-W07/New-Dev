@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        
+        #bt{
+            width: 70px;
+            border-radius: 5px solid black;
+        }
+        .even{
+            background-color: greenyellow;
+        }
+        .odd{
+            background-color: red;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <h1 id="text"></h1>
+    <h1 id="time"></h1>
+    <button id="bt" onclick="pressed();">0</button>
+    <script>
+        let press = 0;
+        function pressed(){
+           let btton = document.querySelector('#bt');
+           press++;
+           localStorage.setItem('button score',press);
+           if( press % 2 ===0){
+            btton.classList.remove('odd');
+            btton.classList.add('even');
+           }else{
+            btton.classList.remove('even');
+            btton.classList.add('odd');
+           }
+           btton.innerText = press;
+        }
+   
+
+
+
+
+
+
+
+        let date = new Date();
+        let hours = date.getHours();
+        let hading = document.querySelector('#text');
+        let t = document.querySelector('#time')
+        if(hours > 5 && hours < 12){
+            hading.innerText = "good moring"
+        }else if(hours >12 && hours < 6){
+            hading.innerText = "good aftroon"
+        }else{
+            hading.innerText = "good night"
+            time.innerText = date.getHours()     
+            //  
+        }
+    </script>
+</body>
+</html>

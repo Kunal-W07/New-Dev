@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cricket project</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cricket Game</h1>
+    <button onclick="
+    let computer;
+    let random_num = Math.random() * 3;
+    if(random_num>=0 && random_num <= 1){
+         computer = 'bat'
+        
+    }else if(random_num>=1 && random_num <= 2){
+         computer = 'ball';
+        
+    }else{
+        computer = 'Stumps';
+      
+    }
+    let result;
+    if(computer==='ball'){
+        result='we won';
+    }else if(computer==='bat'){ 
+        result='tie';
+    }else if(computer==='Stumps'){
+        result='computer won';
+    }
+    alert(`you choise bat and computer choise ${computer} result is ${result}`);
+    ">Bat</button>
+
+    <button onclick="
+    
+    let computer2;
+    let random_num2 = Math.random() * 3;
+    if(random_num2>=0 && random_num2 <= 1){
+         computer2 = 'bat'
+        
+    }else if(random_num2>=1 && random_num2 <= 2){
+         computer2 = 'ball';
+        
+    }else{
+        computer2 = 'Stumps';
+      
+    }
+    let result2;
+    if(computer2==='ball'){
+        result2='tie';
+    }else if(computer2==='bat'){
+        result2='computer won';
+    }else if(computer2==='Stumps'){
+        result2='we won';
+    }
+    alert(`you choise Ball and computer choise ${computer2} result is ${result2}`);
+    
+    ">Ball</button>
+
+    <button onclick="
+    let computer3;
+    let random_num3 = Math.random() * 3;
+    if(random_num3>=0 && random_num3 <= 1){
+         computer3 = 'bat'
+        
+    }else if(random_num3>=1 && random_num3 <= 2){
+         computer3 = 'ball';
+        
+    }else{
+        computer3 = 'Stumps';
+      
+    }
+    let result3; 
+    if(computer3==='ball'){
+        result3='computer won';
+    }else if(computer3==='bat'){
+        result3='we won';
+    }else if(computer3==='Stumps'){
+        result3='tie';
+    }
+    alert(`you choise Stumps and computer choise ${computer3} result is ${result3}`);
+    
+    ">Stump</button>
+</body>
+</html>

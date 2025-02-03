@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .bt{
+            background-color: aqua;
+            width: 100px;
+            height: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+
+            transition: all;
+            transition-duration: 3s;
+            /* transition-timing-function: ease-in-out; */
+            transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition-delay: 1s;
+            
+            /* on one line obove statement5 */
+            /* transition: all 1s ease-in-out 0s; */
+        }
+        .bt:hover{
+            background-color: red;
+            width: 130px;
+            height: 30px;
+        }
+        .bt:active{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <button class="bt">Click me</button>
+</body>
+</html>

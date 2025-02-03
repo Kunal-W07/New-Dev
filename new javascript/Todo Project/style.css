@@ -1,0 +1,23 @@
+#title{
+    text-align: center;
+}
+
+#contener{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+#t1{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px solid black;
+}
+
+
+button{
+    background-color: red;
+    border-radius: 15px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>pratice set</h1>
+    <script>
+        let mynatra = {
+            product : "jordon",
+            name : "jordon shoe 83",
+            color : "black-white",
+            price : 15000,
+            'time': '23',
+        }
+        console.log(mynatra);
+        // change variable is 2nd Reference of mynatra
+        let change = mynatra;
+        change.color="red-black"
+        change.price = 20000;
+        console.log(mynatra)
+        console.log(mynatra['time'])
+
+        let obj = {
+            namea: "John",
+            age: 30
+        }
+        let {namea,age} = obj;
+        console.log(namea)
+        console.log(age)
+    </script>
+</body>
+</html>

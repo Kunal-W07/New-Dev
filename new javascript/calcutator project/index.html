@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="cal-contener">
+          <input type="text" id="display">
+       
+        <div class="btw-contener">
+            <button class="box" onclick="current_value='';
+            document.querySelector('#display').value = current_value;">C</button>
+
+            <button class="box"
+            onclick="current_value=current_value+'1';
+            document.querySelector('#display').value = current_value;">1</button>
+
+            <button class="box"  onclick="current_value=current_value+'2';
+            document.querySelector('#display').value = current_value;">2</button>
+
+            <button class="box"  onclick="current_value=current_value+'+';
+            document.querySelector('#display').value = current_value;">+</button>
+
+            <button class="box"  onclick="current_value=current_value+'3';
+            document.querySelector('#display').value = current_value;">3</button>
+
+            <button class="box"  onclick="current_value=current_value+'4';
+            document.querySelector('#display').value = current_value;">4</button>
+
+            <button class="box"  onclick="current_value=current_value+'-';
+            document.querySelector('#display').value = current_value;">-</button>
+
+            <button class="box"  onclick="current_value=current_value+'5';
+            document.querySelector('#display').value = current_value;">5</button>
+
+            <button class="box"  onclick="current_value=current_value+'6';
+            document.querySelector('#display').value = current_value;">6</button>
+
+            <button class="box"  onclick="current_value=current_value+'*';
+            document.querySelector('#display').value = current_value;">*</button>
+
+            <button class="box"  onclick="current_value=current_value+'7';
+            document.querySelector('#display').value = current_value;">7</button>
+
+            <button class="box"  onclick="current_value=current_value+'8';
+            document.querySelector('#display').value = current_value;">8</button>
+
+            <button class="box"  onclick="current_value=current_value+'/';
+            document.querySelector('#display').value = current_value;">/</button>
+
+            <button class="box"  
+            onclick=" let result = eval(current_value);
+                      current_value = result;
+            document.querySelector('#display').value = current_value;">=</button>
+
+            <button class="box"  onclick="current_value=current_value+'9';
+            document.querySelector('#display').value = current_value;">9</button>
+
+            <button class="box"  onclick="current_value=current_value+'0';
+            document.querySelector('#display').value = current_value;">0</button>
+
+            <button class="box"  onclick="current_value=current_value+'.';
+            document.querySelector('#display').value = current_value;">.</button>
+
+            
+           
+        </div>
+    </div>
+    
+    <script>
+        let current_value = '';
+        document.querySelector('#display').value = current_value;
+    </script>
+</body>
+</html>

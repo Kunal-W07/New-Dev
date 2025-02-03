@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cricket project</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cricket Game</h1>
+    <button onclick="
+    computerchoise();
+
+    let result;
+    if(computer==='ball'){
+        result='we won';
+    }else if(computer==='bat'){ 
+        result='tie';
+    }else if(computer==='Stumps'){
+        result='computer won';
+    }
+    alert(`you choise bat and computer choise ${computer} result is ${result}`);
+    ">Bat</button>
+
+    <button onclick="
+    
+    computerchoise();
+    let result2;
+    if(computer==='ball'){
+        result2='tie';
+    }else if(computer==='bat'){
+        result2='computer won';
+    }else if(computer==='Stumps'){
+        result2='we won';
+    }
+    alert(`you choise Ball and computer choise ${computer} result is ${result2}`);
+    
+    ">Ball</button>
+
+    <button onclick="
+    computerchoise();
+    let result3; 
+    if(computer==='ball'){
+        result3='computer won';
+    }else if(computer==='bat'){
+        result3='we won';
+    }else if(computer==='Stumps'){
+        result3='tie';
+    }
+    alert(`you choise Stumps and computer choise ${computer} result is ${result3}`);
+    
+    ">Stump</button>
+
+    <script>
+        let computer;
+
+        function computerchoise(){
+            let random_num = Math.random() * 3;
+            if(random_num>=0 && random_num <= 1){
+                computer = 'bat'
+        
+           }else if(random_num>=1 && random_num <= 2){
+               computer = 'ball';
+        
+           }else{
+               computer = 'Stumps'; 
+           }
+       }
+
+    </script>
+</body>
+</html>

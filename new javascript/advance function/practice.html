@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,   initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            height: 20px;
+            width: 80px;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            color: white ;
+        }
+        .bubble{
+            height: 40px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">click</button>
+
+    <script>
+
+   let btn1 = document.querySelector('.btn');
+   
+   btn1.addEventListener('click',event =>{
+            setTimeout(ddclick,2000)
+        })
+     function ddclick(){
+       
+        btn1.classList.add('bubble'); 
+        
+     }
+
+
+
+    //    let multi = (num1, num2) => num1 * num2;
+    //    console.log(multi(5, 10));
+
+    //    let greeting = () => console.log('hi janta');
+
+    //    let run = inputf =>{
+    //     inputf();
+    //     inputf();
+    //    }
+    //    run(greeting);
+    </script>
+</body>
+</html>

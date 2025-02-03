@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #bt{
+          
+          background-color:aqua;
+          padding: 5px;
+          margin: 5px;
+          border: 2px solid black;
+          border-radius: 5px;
+        }
+        #bt2{
+
+          background-color:rgb(0, 255, 128);
+          padding: 5px;
+          margin: 5px;
+          border: 2px solid black;
+          border-radius: 5px;
+        }
+        #bt3{
+
+          background-color:rgb(237, 237, 70);
+          padding: 5px;
+          margin: 5px;
+          border: 2px solid black;
+          border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="bt" onclick="contite+=1;
+    document.querySelector('#items').innerText = `your bag has ${contite} items`;">
+    ADD TO BAG</button>
+
+
+    <button id="bt2"  onclick="contite-=1;
+    document.querySelector('#items').innerText = `your bag has ${contite} items`;">
+    MOVE TO WISHLIST - 1</button>
+
+    <button id="bt3"  onclick="contite+=2;
+    document.querySelector('#items').innerText = `your bag has ${contite} items`;">
+    ADD 1+1</button>
+    <h1 id="items"></h1>
+
+    <script src="script.js"></script>
+</body>
+</html>

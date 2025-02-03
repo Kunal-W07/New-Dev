@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex_box</title>
+    <style>
+        #contener{
+            width: 90vw;
+            height: 170px;
+            background-color: rgb(187, 251, 251);
+            border: 2px solid black;
+            margin: 10px;
+            /* display: flex; default left to right (inline) */
+            display: flex; 
+            /* in justify-content: item align horizontali */
+            justify-content: center;
+            /* in align-items: item align verticaly */
+            align-items: center;
+           
+            
+        }
+        .box{ 
+            width: 30px;
+            height: 20px;
+            border: 1px solid rgb(42, 42, 42);
+            margin: 5px;
+        }
+        #box1{background-color: blue;}
+        #box2{background-color: rgb(14, 210, 0);
+        align-self: flex-start;}
+        #box3{background-color: rgb(255, 0, 0);
+            /* in align-self: particular item position change */
+              align-self: flex-end;
+        }
+        #box4{background-color: rgb(237, 14, 174);}
+       
+    </style>
+</head>
+<body>
+    <div id="contener">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+        
+    </div>
+</body>
+</html>

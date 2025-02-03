@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex_box</title>
+    <style>
+        #contener{
+            width: 400px;
+            height: 170px;
+            background-color: rgb(187, 251, 251);
+            border: 2px solid black;
+            margin: 10px;
+            /* display: flex; default left to right (inline) */
+            display: flex; 
+            /* in justify-content: item align horizontali */
+            justify-content: center;
+            /* in align-items: item align verticaly */
+            
+           
+            
+        }
+        .box{ 
+            width: 50px;
+            height: 20px;
+            border: 1px solid rgb(42, 42, 42);
+            margin: 5px;
+        }
+        #box1{background-color: blue;
+             flex-grow: 3; 
+        }
+        #box2{background-color: rgb(14, 210, 0);} 
+
+        #box3{background-color: rgb(255, 0, 0);
+              /* size of particualr change */
+               /* flex-shrink: 3;    */
+        }
+        #box4{background-color: rgb(237, 14, 174); 
+             order: 3;
+        }
+
+        #box5{background-color: rgb(237, 14, 174);}
+       
+    </style>
+</head>
+<body>
+    <div id="contener">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+        <div id="box5" class="box">5</div>
+        
+    </div>
+</body>
+</html>

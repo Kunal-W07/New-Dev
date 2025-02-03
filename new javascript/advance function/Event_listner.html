@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <button id="btw1"> click me</button>
+
+    <script>
+        let button1 = document.querySelector('#btw1');
+        button1.addEventListener('click', event => {
+            console.log("you click me!");
+        })
+
+        let printdate = event =>
+            console.log(new Date());
+            button1.addEventListener('click', printdate);
+        
+    </script>
+</body>
+</html>
